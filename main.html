@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="vakho" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Lyric Finder</title>
+  </head>
+  <body>
+    <div class="container px-5 py-5">
+      <h3 class="text-center pb-3">Lyric Finder</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control artist-input"
+            placeholder="Enter a name..."
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control song-input"
+            placeholder="Enter a song..."
+          />
+        </div>
+        <div class="text-center">
+          <button class="btn btn-outline-success btn-lg mt-4 find-btn">
+            Find
+          </button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="card text-white bg-info mb-3 mt-5 text-center">
+          <div class="card-header">Lyrics</div>
+          <div class="card-body">
+            <h4 class="card-title song-description">Quick lyrics finder</h4>
+            <p class="card-text lyric-text">
+              Type in the artist name and the song name, that's it!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger error-box" role="alert">
+        <h3 class="alert-heading text-center">Error! 404!</h3>
+        <p class="text-center error-message"></p>
+      </div>
+    </div>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
